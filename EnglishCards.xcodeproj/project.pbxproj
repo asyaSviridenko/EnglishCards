@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22885AD71985375D00BA0989 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885AD61985375D00BA0989 /* Foundation.framework */; };
+		22885AD91985375D00BA0989 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885AD81985375D00BA0989 /* CoreGraphics.framework */; };
+		22885ADB1985375D00BA0989 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885ADA1985375D00BA0989 /* UIKit.framework */; };
+		22885ADD1985375D00BA0989 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885ADC1985375D00BA0989 /* CoreData.framework */; };
+		22885AE31985375D00BA0989 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22885AE11985375D00BA0989 /* InfoPlist.strings */; };
+		22885AE51985375D00BA0989 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885AE41985375D00BA0989 /* main.m */; };
+		22885AE91985375D00BA0989 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885AE81985375D00BA0989 /* AppDelegate.m */; };
+		22885AEC1985375D00BA0989 /* EnglishCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22885AEA1985375D00BA0989 /* EnglishCards.xcdatamodeld */; };
+		22885AEE1985375D00BA0989 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22885AED1985375D00BA0989 /* Images.xcassets */; };
+		22885AF51985375D00BA0989 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885AF41985375D00BA0989 /* XCTest.framework */; };
+		22885AF61985375D00BA0989 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885AD61985375D00BA0989 /* Foundation.framework */; };
+		22885AF71985375D00BA0989 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885ADA1985375D00BA0989 /* UIKit.framework */; };
+		22885AF81985375D00BA0989 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885ADC1985375D00BA0989 /* CoreData.framework */; };
+		22885B001985375D00BA0989 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22885AFE1985375D00BA0989 /* InfoPlist.strings */; };
+		22885B021985375D00BA0989 /* EnglishCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B011985375D00BA0989 /* EnglishCardsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22885AF91985375D00BA0989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22885ACB1985375D00BA0989 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22885AD21985375D00BA0989;
+			remoteInfo = EnglishCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22885AD31985375D00BA0989 /* EnglishCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22885AD61985375D00BA0989 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22885AD81985375D00BA0989 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22885ADA1985375D00BA0989 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22885ADC1985375D00BA0989 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		22885AE01985375D00BA0989 /* EnglishCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnglishCards-Info.plist"; sourceTree = "<group>"; };
+		22885AE21985375D00BA0989 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22885AE41985375D00BA0989 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22885AE61985375D00BA0989 /* EnglishCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnglishCards-Prefix.pch"; sourceTree = "<group>"; };
+		22885AE71985375D00BA0989 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22885AE81985375D00BA0989 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22885AEB1985375D00BA0989 /* EnglishCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EnglishCards.xcdatamodel; sourceTree = "<group>"; };
+		22885AED1985375D00BA0989 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22885AF31985375D00BA0989 /* EnglishCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnglishCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22885AF41985375D00BA0989 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		22885AFD1985375D00BA0989 /* EnglishCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnglishCardsTests-Info.plist"; sourceTree = "<group>"; };
+		22885AFF1985375D00BA0989 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22885B011985375D00BA0989 /* EnglishCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishCardsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22885AD01985375D00BA0989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22885AD91985375D00BA0989 /* CoreGraphics.framework in Frameworks */,
+				22885ADD1985375D00BA0989 /* CoreData.framework in Frameworks */,
+				22885ADB1985375D00BA0989 /* UIKit.framework in Frameworks */,
+				22885AD71985375D00BA0989 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22885AF01985375D00BA0989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22885AF51985375D00BA0989 /* XCTest.framework in Frameworks */,
+				22885AF81985375D00BA0989 /* CoreData.framework in Frameworks */,
+				22885AF71985375D00BA0989 /* UIKit.framework in Frameworks */,
+				22885AF61985375D00BA0989 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22885ACA1985375D00BA0989 = {
+			isa = PBXGroup;
+			children = (
+				22885ADE1985375D00BA0989 /* EnglishCards */,
+				22885AFB1985375D00BA0989 /* EnglishCardsTests */,
+				22885AD51985375D00BA0989 /* Frameworks */,
+				22885AD41985375D00BA0989 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22885AD41985375D00BA0989 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22885AD31985375D00BA0989 /* EnglishCards.app */,
+				22885AF31985375D00BA0989 /* EnglishCardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22885AD51985375D00BA0989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22885AD61985375D00BA0989 /* Foundation.framework */,
+				22885AD81985375D00BA0989 /* CoreGraphics.framework */,
+				22885ADA1985375D00BA0989 /* UIKit.framework */,
+				22885ADC1985375D00BA0989 /* CoreData.framework */,
+				22885AF41985375D00BA0989 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22885ADE1985375D00BA0989 /* EnglishCards */ = {
+			isa = PBXGroup;
+			children = (
+				22885AE71985375D00BA0989 /* AppDelegate.h */,
+				22885AE81985375D00BA0989 /* AppDelegate.m */,
+				22885AED1985375D00BA0989 /* Images.xcassets */,
+				22885AEA1985375D00BA0989 /* EnglishCards.xcdatamodeld */,
+				22885ADF1985375D00BA0989 /* Supporting Files */,
+			);
+			path = EnglishCards;
+			sourceTree = "<group>";
+		};
+		22885ADF1985375D00BA0989 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22885AE01985375D00BA0989 /* EnglishCards-Info.plist */,
+				22885AE11985375D00BA0989 /* InfoPlist.strings */,
+				22885AE41985375D00BA0989 /* main.m */,
+				22885AE61985375D00BA0989 /* EnglishCards-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22885AFB1985375D00BA0989 /* EnglishCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				22885B011985375D00BA0989 /* EnglishCardsTests.m */,
+				22885AFC1985375D00BA0989 /* Supporting Files */,
+			);
+			path = EnglishCardsTests;
+			sourceTree = "<group>";
+		};
+		22885AFC1985375D00BA0989 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22885AFD1985375D00BA0989 /* EnglishCardsTests-Info.plist */,
+				22885AFE1985375D00BA0989 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22885AD21985375D00BA0989 /* EnglishCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22885B051985375D00BA0989 /* Build configuration list for PBXNativeTarget "EnglishCards" */;
+			buildPhases = (
+				22885ACF1985375D00BA0989 /* Sources */,
+				22885AD01985375D00BA0989 /* Frameworks */,
+				22885AD11985375D00BA0989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnglishCards;
+			productName = EnglishCards;
+			productReference = 22885AD31985375D00BA0989 /* EnglishCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22885AF21985375D00BA0989 /* EnglishCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22885B081985375D00BA0989 /* Build configuration list for PBXNativeTarget "EnglishCardsTests" */;
+			buildPhases = (
+				22885AEF1985375D00BA0989 /* Sources */,
+				22885AF01985375D00BA0989 /* Frameworks */,
+				22885AF11985375D00BA0989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22885AFA1985375D00BA0989 /* PBXTargetDependency */,
+			);
+			name = EnglishCardsTests;
+			productName = EnglishCardsTests;
+			productReference = 22885AF31985375D00BA0989 /* EnglishCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22885ACB1985375D00BA0989 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = asya;
+				TargetAttributes = {
+					22885AF21985375D00BA0989 = {
+						TestTargetID = 22885AD21985375D00BA0989;
+					};
+				};
+			};
+			buildConfigurationList = 22885ACE1985375D00BA0989 /* Build configuration list for PBXProject "EnglishCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22885ACA1985375D00BA0989;
+			productRefGroup = 22885AD41985375D00BA0989 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22885AD21985375D00BA0989 /* EnglishCards */,
+				22885AF21985375D00BA0989 /* EnglishCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22885AD11985375D00BA0989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22885AE31985375D00BA0989 /* InfoPlist.strings in Resources */,
+				22885AEE1985375D00BA0989 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22885AF11985375D00BA0989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22885B001985375D00BA0989 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22885ACF1985375D00BA0989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22885AE91985375D00BA0989 /* AppDelegate.m in Sources */,
+				22885AEC1985375D00BA0989 /* EnglishCards.xcdatamodeld in Sources */,
+				22885AE51985375D00BA0989 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22885AEF1985375D00BA0989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22885B021985375D00BA0989 /* EnglishCardsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22885AFA1985375D00BA0989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22885AD21985375D00BA0989 /* EnglishCards */;
+			targetProxy = 22885AF91985375D00BA0989 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22885AE11985375D00BA0989 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22885AE21985375D00BA0989 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22885AFE1985375D00BA0989 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22885AFF1985375D00BA0989 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22885B031985375D00BA0989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22885B041985375D00BA0989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22885B061985375D00BA0989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnglishCards/EnglishCards-Prefix.pch";
+				INFOPLIST_FILE = "EnglishCards/EnglishCards-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22885B071985375D00BA0989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnglishCards/EnglishCards-Prefix.pch";
+				INFOPLIST_FILE = "EnglishCards/EnglishCards-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		22885B091985375D00BA0989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EnglishCards.app/EnglishCards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnglishCards/EnglishCards-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EnglishCardsTests/EnglishCardsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		22885B0A1985375D00BA0989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EnglishCards.app/EnglishCards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnglishCards/EnglishCards-Prefix.pch";
+				INFOPLIST_FILE = "EnglishCardsTests/EnglishCardsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22885ACE1985375D00BA0989 /* Build configuration list for PBXProject "EnglishCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22885B031985375D00BA0989 /* Debug */,
+				22885B041985375D00BA0989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22885B051985375D00BA0989 /* Build configuration list for PBXNativeTarget "EnglishCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22885B061985375D00BA0989 /* Debug */,
+				22885B071985375D00BA0989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22885B081985375D00BA0989 /* Build configuration list for PBXNativeTarget "EnglishCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22885B091985375D00BA0989 /* Debug */,
+				22885B0A1985375D00BA0989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22885AEA1985375D00BA0989 /* EnglishCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22885AEB1985375D00BA0989 /* EnglishCards.xcdatamodel */,
+			);
+			currentVersion = 22885AEB1985375D00BA0989 /* EnglishCards.xcdatamodel */;
+			path = EnglishCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 22885ACB1985375D00BA0989 /* Project object */;
+}
