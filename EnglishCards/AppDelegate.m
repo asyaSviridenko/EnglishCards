@@ -23,7 +23,7 @@
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
     
-    _window.rootViewController = [[ListsViewController alloc] init];
+    _window.rootViewController = [[ListsViewController alloc] initWithManagedObjectContext:_contextHelper];
     
     [_window makeKeyAndVisible];
     

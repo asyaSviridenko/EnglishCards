@@ -39,6 +39,15 @@
     }
 }
 
+- (NSArray *)uploadAllLists
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:[List entityName] inManagedObjectContext:_managedObjectContext]];
+    [fetchRequest setSortDescriptors:@[[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES]]];
+    
+    return [_managedObjectContext executeFetchRequest:fetchRequest error:nil];
+}
+
 - (void)insertListWithName:(NSString *)name image:(UIImage *)image cards:(NSArray *)cards
 {
     List *list = [self managedObjectWithEntityName:[List entityName]];

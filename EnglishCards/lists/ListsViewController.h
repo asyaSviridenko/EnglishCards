@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class ManagedObjectContextHelper;
+
 @interface ListsViewController : UITableViewController
 
-- (instancetype)initWithLists:(NSArray *)lists;
+- (instancetype)initWithManagedObjectContext:(ManagedObjectContextHelper *)contextHelper;
 
 @end

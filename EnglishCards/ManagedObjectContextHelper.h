@@ -18,6 +18,8 @@
 
 - (void)saveContext;
 
+- (NSArray *)uploadAllLists;
+
 - (void)insertListWithName:(NSString *)name image:(UIImage *)image cards:(NSArray *)cards;
 - (void)deleteListWithName:(NSString *)name;
 

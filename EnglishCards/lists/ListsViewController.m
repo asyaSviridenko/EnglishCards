@@ -7,6 +7,7 @@
 //
 
 #import "ListsViewController.h"
+#import "ManagedObjectContextHelper.h"
 #import "List.h"
 
 @interface ListsViewController ()
@@ -14,6 +15,7 @@
 @end
 
 @implementation ListsViewController {
+    ManagedObjectContextHelper *_contextHelper;
     NSArray *_lists;
     BOOL _isEditingMode;
 }
@@ -22,17 +24,20 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _lists = [NSArray array];
+        _contextHelper = [ManagedObjectContextHelper sharedHelper];
+        _lists = [_contextHelper uploadAllLists];
         _isEditingMode = NO;
     }
     return self;
 }
 
-- (instancetype)initWithLists:(NSArray *)lists
+- (instancetype)initWithManagedObjectContext:(ManagedObjectContextHelper *)contextHelper
 {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        _lists = lists;
+        _contextHelper = contextHelper;
+        _lists = [_contextHelper uploadAllLists];
+        
         _isEditingMode = NO;
     }
     return self;
@@ -48,6 +53,9 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStyleBordered target:self action:@selector(onEditButtonTap)];
 }
+
+#pragma mark - Internals
+
 
 #pragma mark - Actions
 
