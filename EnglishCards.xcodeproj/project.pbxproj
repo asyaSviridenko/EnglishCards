@@ -22,11 +22,12 @@
 		22885AF81985375D00BA0989 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885ADC1985375D00BA0989 /* CoreData.framework */; };
 		22885B001985375D00BA0989 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22885AFE1985375D00BA0989 /* InfoPlist.strings */; };
 		22885B021985375D00BA0989 /* EnglishCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B011985375D00BA0989 /* EnglishCardsTests.m */; };
-		22885B0E198567B400BA0989 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B0D198567B400BA0989 /* Card.m */; };
 		22885B11198567B500BA0989 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B10198567B500BA0989 /* List.m */; };
 		22885B2419856A6F00BA0989 /* ListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B2219856A6F00BA0989 /* ListsViewController.m */; };
 		22CD6DCC198FF9C8007FA3A0 /* ManagedObjectContextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CD6DCB198FF9C8007FA3A0 /* ManagedObjectContextHelper.m */; };
 		22CD6DCF198FFFCE007FA3A0 /* NSManagedObject+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CD6DCE198FFFCE007FA3A0 /* NSManagedObject+Helper.m */; };
+		CECCC78F19989E1800CDEDB6 /* CardFrontSide.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCC78E19989E1800CDEDB6 /* CardFrontSide.m */; };
+		CECCC79219989E1900CDEDB6 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCC79119989E1900CDEDB6 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,6 @@
 		22885AFD1985375D00BA0989 /* EnglishCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnglishCardsTests-Info.plist"; sourceTree = "<group>"; };
 		22885AFF1985375D00BA0989 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22885B011985375D00BA0989 /* EnglishCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishCardsTests.m; sourceTree = "<group>"; };
-		22885B0C198567B400BA0989 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		22885B0D198567B400BA0989 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		22885B0F198567B500BA0989 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		22885B10198567B500BA0989 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		22885B2119856A6F00BA0989 /* ListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsViewController.h; sourceTree = "<group>"; };
@@ -68,6 +67,10 @@
 		22CD6DCB198FF9C8007FA3A0 /* ManagedObjectContextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedObjectContextHelper.m; path = EnglishCards/ManagedObjectContextHelper.m; sourceTree = SOURCE_ROOT; };
 		22CD6DCD198FFFCE007FA3A0 /* NSManagedObject+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Helper.h"; path = "EnglishCards/NSManagedObject+Helper.h"; sourceTree = SOURCE_ROOT; };
 		22CD6DCE198FFFCE007FA3A0 /* NSManagedObject+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Helper.m"; path = "EnglishCards/NSManagedObject+Helper.m"; sourceTree = SOURCE_ROOT; };
+		CECCC78D19989E1800CDEDB6 /* CardFrontSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardFrontSide.h; sourceTree = "<group>"; };
+		CECCC78E19989E1800CDEDB6 /* CardFrontSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardFrontSide.m; sourceTree = "<group>"; };
+		CECCC79019989E1900CDEDB6 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		CECCC79119989E1900CDEDB6 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +180,10 @@
 			children = (
 				22885B0F198567B500BA0989 /* List.h */,
 				22885B10198567B500BA0989 /* List.m */,
-				22885B0C198567B400BA0989 /* Card.h */,
-				22885B0D198567B400BA0989 /* Card.m */,
+				CECCC79019989E1900CDEDB6 /* Card.h */,
+				CECCC79119989E1900CDEDB6 /* Card.m */,
+				CECCC78D19989E1800CDEDB6 /* CardFrontSide.h */,
+				CECCC78E19989E1800CDEDB6 /* CardFrontSide.m */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -307,12 +312,13 @@
 			files = (
 				22885B11198567B500BA0989 /* List.m in Sources */,
 				22885AE91985375D00BA0989 /* AppDelegate.m in Sources */,
+				CECCC78F19989E1800CDEDB6 /* CardFrontSide.m in Sources */,
 				22885B2419856A6F00BA0989 /* ListsViewController.m in Sources */,
 				22CD6DCF198FFFCE007FA3A0 /* NSManagedObject+Helper.m in Sources */,
+				CECCC79219989E1900CDEDB6 /* Card.m in Sources */,
 				22885AEC1985375D00BA0989 /* EnglishCards.xcdatamodeld in Sources */,
 				22CD6DCC198FF9C8007FA3A0 /* ManagedObjectContextHelper.m in Sources */,
 				22885AE51985375D00BA0989 /* main.m in Sources */,
-				22885B0E198567B400BA0989 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

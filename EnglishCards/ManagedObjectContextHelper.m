@@ -54,12 +54,12 @@
     
 }
 
-- (void)insertCardWithFrontSide:(NSString *)front backSide:(NSString *)back
+- (void)insertCardWithFrontSide:(NSString *)front backSides:(NSArray *)backSides
 {
     
 }
 
-- (void)deleteCardWithFrontSide:(NSString *)front backSide:(NSString *)back
+- (void)deleteCardWithFrontSide:(NSString *)front
 {
     
 }
