@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@class List;
+@class Card;
+
 @interface ManagedObjectContextHelper : NSObject
 
 @property (nonatomic, strong, readonly) NSManagedObjectContext *managedObjectContext;
@@ -20,10 +23,12 @@
 
 - (NSArray *)uploadAllLists;
 
-- (void)insertListWithName:(NSString *)name image:(UIImage *)image cards:(NSArray *)cards;
-- (void)deleteListWithName:(NSString *)name;
+- (List *)insertNewList;
+- (Card *)insertNewCard;
 
-- (void)insertCardWithFrontSide:(NSString *)front backSides:(NSArray *)backSides;
-- (void)deleteCardWithFrontSide:(NSString *)front;
+- (void)deleteList:(List *)list;
+- (void)deleteCard:(Card *)card;
+
+- (void)addCard:(Card *)card toList:(List *)list;
 
 @end

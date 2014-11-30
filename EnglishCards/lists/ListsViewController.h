@@ -12,6 +12,6 @@
 
 @interface ListsViewController : UITableViewController
 
-- (instancetype)initWithManagedObjectContext:(ManagedObjectContextHelper *)contextHelper;
+- (instancetype)initWithManagedObjectContext:(ManagedObjectContextHelper *)contextHelper NS_DESIGNATED_INITIALIZER;
 
 @end

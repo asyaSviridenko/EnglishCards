@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2240588019F9009A00768103 /* EditListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240587F19F9009A00768103 /* EditListViewController.m */; };
+		2240588519F917DE00768103 /* EditableListTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240588319F917DE00768103 /* EditableListTitleCell.m */; };
+		2240588619F917DE00768103 /* EditableListTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2240588419F917DE00768103 /* EditableListTitleCell.xib */; };
 		22885AD71985375D00BA0989 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885AD61985375D00BA0989 /* Foundation.framework */; };
 		22885AD91985375D00BA0989 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885AD81985375D00BA0989 /* CoreGraphics.framework */; };
 		22885ADB1985375D00BA0989 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885ADA1985375D00BA0989 /* UIKit.framework */; };
@@ -22,12 +25,17 @@
 		22885AF81985375D00BA0989 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22885ADC1985375D00BA0989 /* CoreData.framework */; };
 		22885B001985375D00BA0989 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22885AFE1985375D00BA0989 /* InfoPlist.strings */; };
 		22885B021985375D00BA0989 /* EnglishCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B011985375D00BA0989 /* EnglishCardsTests.m */; };
-		22885B11198567B500BA0989 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B10198567B500BA0989 /* List.m */; };
 		22885B2419856A6F00BA0989 /* ListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22885B2219856A6F00BA0989 /* ListsViewController.m */; };
+		229429AB1A2B2EE0004F16D5 /* EditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229429AA1A2B2EE0004F16D5 /* EditCardViewController.m */; };
+		229429AE1A2B30D4004F16D5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 229429AD1A2B30D4004F16D5 /* Card.m */; };
+		229429B21A2B3135004F16D5 /* EditableCardSideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229429B01A2B3135004F16D5 /* EditableCardSideCell.m */; };
+		229429B31A2B3135004F16D5 /* EditableCardSideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229429B11A2B3135004F16D5 /* EditableCardSideCell.xib */; };
+		229429B71A2B3163004F16D5 /* EditableCardDoneStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229429B51A2B3163004F16D5 /* EditableCardDoneStateCell.m */; };
+		229429B81A2B3163004F16D5 /* EditableCardDoneStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229429B61A2B3163004F16D5 /* EditableCardDoneStateCell.xib */; };
+		229429BB1A2B400E004F16D5 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 229429BA1A2B400E004F16D5 /* List.m */; };
+		229429C21A2B72AD004F16D5 /* UIImage+Icon.m in Sources */ = {isa = PBXBuildFile; fileRef = 229429C11A2B72AD004F16D5 /* UIImage+Icon.m */; };
 		22CD6DCC198FF9C8007FA3A0 /* ManagedObjectContextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CD6DCB198FF9C8007FA3A0 /* ManagedObjectContextHelper.m */; };
 		22CD6DCF198FFFCE007FA3A0 /* NSManagedObject+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CD6DCE198FFFCE007FA3A0 /* NSManagedObject+Helper.m */; };
-		CECCC78F19989E1800CDEDB6 /* CardFrontSide.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCC78E19989E1800CDEDB6 /* CardFrontSide.m */; };
-		CECCC79219989E1900CDEDB6 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCC79119989E1900CDEDB6 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2240587E19F9009A00768103 /* EditListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditListViewController.h; sourceTree = "<group>"; };
+		2240587F19F9009A00768103 /* EditListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditListViewController.m; sourceTree = "<group>"; };
+		2240588219F917DE00768103 /* EditableListTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableListTitleCell.h; sourceTree = "<group>"; };
+		2240588319F917DE00768103 /* EditableListTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableListTitleCell.m; sourceTree = "<group>"; };
+		2240588419F917DE00768103 /* EditableListTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableListTitleCell.xib; sourceTree = "<group>"; };
 		22885AD31985375D00BA0989 /* EnglishCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22885AD61985375D00BA0989 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22885AD81985375D00BA0989 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,18 +72,26 @@
 		22885AFD1985375D00BA0989 /* EnglishCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnglishCardsTests-Info.plist"; sourceTree = "<group>"; };
 		22885AFF1985375D00BA0989 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22885B011985375D00BA0989 /* EnglishCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishCardsTests.m; sourceTree = "<group>"; };
-		22885B0F198567B500BA0989 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		22885B10198567B500BA0989 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		22885B2119856A6F00BA0989 /* ListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsViewController.h; sourceTree = "<group>"; };
 		22885B2219856A6F00BA0989 /* ListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListsViewController.m; sourceTree = "<group>"; };
+		229429A91A2B2EE0004F16D5 /* EditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCardViewController.h; sourceTree = "<group>"; };
+		229429AA1A2B2EE0004F16D5 /* EditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCardViewController.m; sourceTree = "<group>"; };
+		229429AC1A2B30D4004F16D5 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		229429AD1A2B30D4004F16D5 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		229429AF1A2B3135004F16D5 /* EditableCardSideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCardSideCell.h; sourceTree = "<group>"; };
+		229429B01A2B3135004F16D5 /* EditableCardSideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCardSideCell.m; sourceTree = "<group>"; };
+		229429B11A2B3135004F16D5 /* EditableCardSideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableCardSideCell.xib; sourceTree = "<group>"; };
+		229429B41A2B3163004F16D5 /* EditableCardDoneStateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCardDoneStateCell.h; sourceTree = "<group>"; };
+		229429B51A2B3163004F16D5 /* EditableCardDoneStateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCardDoneStateCell.m; sourceTree = "<group>"; };
+		229429B61A2B3163004F16D5 /* EditableCardDoneStateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableCardDoneStateCell.xib; sourceTree = "<group>"; };
+		229429B91A2B400E004F16D5 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		229429BA1A2B400E004F16D5 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		229429C01A2B72AD004F16D5 /* UIImage+Icon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Icon.h"; sourceTree = "<group>"; };
+		229429C11A2B72AD004F16D5 /* UIImage+Icon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Icon.m"; sourceTree = "<group>"; };
 		22CD6DCA198FF9C8007FA3A0 /* ManagedObjectContextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedObjectContextHelper.h; path = EnglishCards/ManagedObjectContextHelper.h; sourceTree = SOURCE_ROOT; };
 		22CD6DCB198FF9C8007FA3A0 /* ManagedObjectContextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagedObjectContextHelper.m; path = EnglishCards/ManagedObjectContextHelper.m; sourceTree = SOURCE_ROOT; };
 		22CD6DCD198FFFCE007FA3A0 /* NSManagedObject+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Helper.h"; path = "EnglishCards/NSManagedObject+Helper.h"; sourceTree = SOURCE_ROOT; };
 		22CD6DCE198FFFCE007FA3A0 /* NSManagedObject+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Helper.m"; path = "EnglishCards/NSManagedObject+Helper.m"; sourceTree = SOURCE_ROOT; };
-		CECCC78D19989E1800CDEDB6 /* CardFrontSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardFrontSide.h; sourceTree = "<group>"; };
-		CECCC78E19989E1800CDEDB6 /* CardFrontSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardFrontSide.m; sourceTree = "<group>"; };
-		CECCC79019989E1900CDEDB6 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		CECCC79119989E1900CDEDB6 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +154,7 @@
 		22885ADE1985375D00BA0989 /* EnglishCards */ = {
 			isa = PBXGroup;
 			children = (
+				229429BF1A2B728F004F16D5 /* utils */,
 				22CD6DC6198FF854007FA3A0 /* coreData */,
 				22885B1F19856A5D00BA0989 /* cards */,
 				22885B2019856A5D00BA0989 /* lists */,
@@ -178,12 +200,10 @@
 		22885B0B1985679800BA0989 /* entities */ = {
 			isa = PBXGroup;
 			children = (
-				22885B0F198567B500BA0989 /* List.h */,
-				22885B10198567B500BA0989 /* List.m */,
-				CECCC79019989E1900CDEDB6 /* Card.h */,
-				CECCC79119989E1900CDEDB6 /* Card.m */,
-				CECCC78D19989E1800CDEDB6 /* CardFrontSide.h */,
-				CECCC78E19989E1800CDEDB6 /* CardFrontSide.m */,
+				229429AC1A2B30D4004F16D5 /* Card.h */,
+				229429AD1A2B30D4004F16D5 /* Card.m */,
+				229429B91A2B400E004F16D5 /* List.h */,
+				229429BA1A2B400E004F16D5 /* List.m */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -191,6 +211,14 @@
 		22885B1F19856A5D00BA0989 /* cards */ = {
 			isa = PBXGroup;
 			children = (
+				229429A91A2B2EE0004F16D5 /* EditCardViewController.h */,
+				229429AA1A2B2EE0004F16D5 /* EditCardViewController.m */,
+				229429AF1A2B3135004F16D5 /* EditableCardSideCell.h */,
+				229429B01A2B3135004F16D5 /* EditableCardSideCell.m */,
+				229429B11A2B3135004F16D5 /* EditableCardSideCell.xib */,
+				229429B41A2B3163004F16D5 /* EditableCardDoneStateCell.h */,
+				229429B51A2B3163004F16D5 /* EditableCardDoneStateCell.m */,
+				229429B61A2B3163004F16D5 /* EditableCardDoneStateCell.xib */,
 			);
 			path = cards;
 			sourceTree = "<group>";
@@ -200,8 +228,22 @@
 			children = (
 				22885B2119856A6F00BA0989 /* ListsViewController.h */,
 				22885B2219856A6F00BA0989 /* ListsViewController.m */,
+				2240587E19F9009A00768103 /* EditListViewController.h */,
+				2240587F19F9009A00768103 /* EditListViewController.m */,
+				2240588219F917DE00768103 /* EditableListTitleCell.h */,
+				2240588319F917DE00768103 /* EditableListTitleCell.m */,
+				2240588419F917DE00768103 /* EditableListTitleCell.xib */,
 			);
 			path = lists;
+			sourceTree = "<group>";
+		};
+		229429BF1A2B728F004F16D5 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				229429C01A2B72AD004F16D5 /* UIImage+Icon.h */,
+				229429C11A2B72AD004F16D5 /* UIImage+Icon.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		22CD6DC6198FF854007FA3A0 /* coreData */ = {
@@ -291,6 +333,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22885AE31985375D00BA0989 /* InfoPlist.strings in Resources */,
+				2240588619F917DE00768103 /* EditableListTitleCell.xib in Resources */,
+				229429B81A2B3163004F16D5 /* EditableCardDoneStateCell.xib in Resources */,
+				229429B31A2B3135004F16D5 /* EditableCardSideCell.xib in Resources */,
 				22885AEE1985375D00BA0989 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,14 +355,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22885B11198567B500BA0989 /* List.m in Sources */,
+				229429BB1A2B400E004F16D5 /* List.m in Sources */,
 				22885AE91985375D00BA0989 /* AppDelegate.m in Sources */,
-				CECCC78F19989E1800CDEDB6 /* CardFrontSide.m in Sources */,
+				229429AB1A2B2EE0004F16D5 /* EditCardViewController.m in Sources */,
+				229429B71A2B3163004F16D5 /* EditableCardDoneStateCell.m in Sources */,
 				22885B2419856A6F00BA0989 /* ListsViewController.m in Sources */,
 				22CD6DCF198FFFCE007FA3A0 /* NSManagedObject+Helper.m in Sources */,
-				CECCC79219989E1900CDEDB6 /* Card.m in Sources */,
+				2240588019F9009A00768103 /* EditListViewController.m in Sources */,
+				229429B21A2B3135004F16D5 /* EditableCardSideCell.m in Sources */,
+				229429C21A2B72AD004F16D5 /* UIImage+Icon.m in Sources */,
 				22885AEC1985375D00BA0989 /* EnglishCards.xcdatamodeld in Sources */,
 				22CD6DCC198FF9C8007FA3A0 /* ManagedObjectContextHelper.m in Sources */,
+				2240588519F917DE00768103 /* EditableListTitleCell.m in Sources */,
+				229429AE1A2B30D4004F16D5 /* Card.m in Sources */,
 				22885AE51985375D00BA0989 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

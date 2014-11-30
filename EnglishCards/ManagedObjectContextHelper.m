@@ -48,29 +48,32 @@
     return [_managedObjectContext executeFetchRequest:fetchRequest error:nil];
 }
 
-- (void)insertListWithName:(NSString *)name image:(UIImage *)image cards:(NSArray *)cards
+- (List *)insertNewList
 {
-    List *list = [self managedObjectWithEntityName:[List entityName]];
-    list.name = name;
-    list.image = UIImageJPEGRepresentation(image, 1.0f);
-    [list addCards:[[NSOrderedSet alloc] initWithArray:cards]];
-    
+    return [self managedObjectWithEntityName:[List entityName]];
+}
+
+- (Card *)insertNewCard
+{
+    return [self managedObjectWithEntityName:[Card entityName]];
+}
+
+- (void)deleteList:(List *)list
+{
+    [_managedObjectContext deleteObject:list];
     [self saveContext];
 }
 
-- (void)deleteListWithName:(NSString *)name
+- (void)deleteCard:(Card *)card
 {
-    
+    [_managedObjectContext deleteObject:card];
+    [self saveContext];
 }
 
-- (void)insertCardWithFrontSide:(NSString *)front backSides:(NSArray *)backSides
+- (void)addCard:(Card *)card toList:(List *)list
 {
-    
-}
-
-- (void)deleteCardWithFrontSide:(NSString *)front
-{
-    
+    card.list = list;
+    [self saveContext];
 }
 
 #pragma mark - Internals

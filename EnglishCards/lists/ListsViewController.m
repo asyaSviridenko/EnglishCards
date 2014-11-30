@@ -8,27 +8,16 @@
 
 #import "ListsViewController.h"
 #import "ManagedObjectContextHelper.h"
+#import "EditListViewController.h"
 #import "List.h"
 
-@interface ListsViewController ()
-
+@interface ListsViewController ()<EditListViewControllerDelegate>
 @end
 
 @implementation ListsViewController {
     ManagedObjectContextHelper *_contextHelper;
     NSArray *_lists;
     BOOL _isEditingMode;
-}
-
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        _contextHelper = [ManagedObjectContextHelper sharedHelper];
-        _lists = [_contextHelper uploadAllLists];
-        _isEditingMode = NO;
-    }
-    return self;
 }
 
 - (instancetype)initWithManagedObjectContext:(ManagedObjectContextHelper *)contextHelper
@@ -52,10 +41,16 @@
     self.title = @"My Lists";
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStyleBordered target:self action:@selector(onEditButtonTap)];
+    
+    self.tableView.tableFooterView = [UIView new];
 }
 
 #pragma mark - Internals
 
+- (BOOL)isAddListCellAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath.row >= _lists.count;
+}
 
 #pragma mark - Actions
 
@@ -75,13 +70,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listCellID" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listCellID"];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"listCellID"];
     }
     
-    cell.textLabel.text = indexPath.row <_lists.count ? ((List *)[_lists objectAtIndex:indexPath.row]).name : @"Add new list...";
+    if ([self isAddListCellAtIndexPath:indexPath]) {
+        cell.textLabel.text = @"Add new list...";
+        cell.imageView.image = nil;
+    } else {
+        List *list = (List *)[_lists objectAtIndex:indexPath.row];
+        cell.textLabel.text = list.name;
+        cell.imageView.image = [UIImage imageWithData:list.image];
+    }
+    
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -89,12 +92,18 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return _isEditingMode;
+    return _isEditingMode && ![self isAddListCellAtIndexPath:indexPath];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return _isEditingMode && ![self isAddListCellAtIndexPath:indexPath];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [_contextHelper deleteList:[_lists objectAtIndex:indexPath.row]];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
@@ -103,18 +112,23 @@
 {
 }
 
-
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return _isEditingMode;
-}
-
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[self.navigationController pushViewController:detailViewController animated:YES];
+    List *list = [self isAddListCellAtIndexPath:indexPath] ? [_contextHelper insertNewList] : [_lists objectAtIndex:indexPath.row];
+    EditListViewController *controller = [[EditListViewController alloc] initWithContextHelper:_contextHelper list:list];
+    controller.delegate = self;
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
+#pragma mark - EditListViewControllerDelegate
 
+- (void)editListViewController:(EditListViewController *)controller didUpdateList:(List *)list
+{
+    _lists = [_contextHelper uploadAllLists];
+    [self.tableView reloadData];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

@@ -23,7 +23,9 @@
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
     
-    _window.rootViewController = [[ListsViewController alloc] initWithManagedObjectContext:_contextHelper];
+    ListsViewController *listController = [[ListsViewController alloc] initWithManagedObjectContext:_contextHelper];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:listController];
+    _window.rootViewController = navigationController;
     
     [_window makeKeyAndVisible];
     

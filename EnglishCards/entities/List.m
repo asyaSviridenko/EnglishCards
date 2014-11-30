@@ -2,7 +2,7 @@
 //  List.m
 //  EnglishCards
 //
-//  Created by asya on 27/07/14.
+//  Created by Anastasia Kononova on 11/30/14.
 //  Copyright (c) 2014 asya. All rights reserved.
 //
 
@@ -12,8 +12,8 @@
 
 @implementation List
 
-@dynamic name;
 @dynamic image;
+@dynamic name;
 @dynamic cards;
 
 @end
