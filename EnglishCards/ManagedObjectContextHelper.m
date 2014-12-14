@@ -12,6 +12,8 @@
 #import "List.h"
 #import "Card.h"
 
+NSString * const ManagedObjectContextHelperDidChangeLists = @"ManagedObjectContextHelperDidChangeLists";
+
 @implementation ManagedObjectContextHelper
 
 + (ManagedObjectContextHelper *)sharedHelper
@@ -50,7 +52,10 @@
 
 - (List *)insertNewList
 {
-    return [self managedObjectWithEntityName:[List entityName]];
+    List *list = [self managedObjectWithEntityName:[List entityName]];
+    [self notifyListsChanged];
+    
+    return list;
 }
 
 - (Card *)insertNewCard
@@ -62,6 +67,8 @@
 {
     [_managedObjectContext deleteObject:list];
     [self saveContext];
+    
+    [self notifyListsChanged];
 }
 
 - (void)deleteCard:(Card *)card
@@ -101,6 +108,11 @@
 - (id)managedObjectWithEntityName:(NSString*)name
 {
     return [NSEntityDescription insertNewObjectForEntityForName:name inManagedObjectContext:self.managedObjectContext];
+}
+
+- (void)notifyListsChanged
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:ManagedObjectContextHelperDidChangeLists object:self];
 }
 
 @end

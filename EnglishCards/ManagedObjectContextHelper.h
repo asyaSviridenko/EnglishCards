@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+UIKIT_EXTERN NSString * const ManagedObjectContextHelperDidChangeLists;
+
 @class List;
 @class Card;
 

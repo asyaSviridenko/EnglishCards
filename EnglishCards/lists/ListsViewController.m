@@ -43,6 +43,8 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStyleBordered target:self action:@selector(onEditButtonTap)];
     
     self.tableView.tableFooterView = [UIView new];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onListDidChanged) name:ManagedObjectContextHelperDidChangeLists object:_contextHelper];
 }
 
 #pragma mark - Internals
@@ -58,6 +60,11 @@
 {
     _isEditingMode = !_isEditingMode;
     [self.tableView setEditing:_isEditingMode animated:YES];
+}
+
+- (void)onListDidChanged
+{
+    _lists = [_contextHelper uploadAllLists];
 }
 
 #pragma mark - UITableViewDataSource
@@ -126,9 +133,8 @@
 
 - (void)editListViewController:(EditListViewController *)controller didUpdateList:(List *)list
 {
-    _lists = [_contextHelper uploadAllLists];
     [self.tableView reloadData];
-    
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 @end
